@@ -1,0 +1,64 @@
+import numpy as np
+import matplotlib.pyplot as plt
+%matplotlib inline
+vectX = np.array([3,6])
+vectY = np.array([8,6])
+c = np.arange(-10,10,0.25)
+
+plt.scatter(c*vectX[0],c*vectX[1])
+
+
+
+plt.xlim(-3,4)
+plt.ylim(-5,6)
+plt.axhline(y=0, color='k')
+plt.axvline(x=0, color='k')
+plt.grid()
+plt.show()
+vectA = np.array([1,2])
+vectB = np.array([3,-2])
+R = np.arange(-9,9,2)
+c1,c2 = np.meshgrid(R,R)
+vectR = vectA + vectB 
+spanRx = c1*vectA[0] + c2*vectB[0]
+spanRy = c1*vectA[1] + c2*vectB[1]
+# plt.scatter(R*vectA[0],R*vectA[1])
+plt.scatter(spanRx,spanRy, s=5, alpha=0.75)
+
+plt.axhline(y=0, color='k')
+plt.axvline(x=0, color='k')
+plt.grid()
+plt.show
+c = np.arange(-10,10,0.25)
+
+plt.scatter(c*vectX[0],c*vectX[1])
+
+
+plt.xlim(-5,4)
+plt.ylim(-3,2)
+plt.axhline(y=0, color='k')
+plt.axvline(x=0, color='k')
+plt.grid()
+plt.show()
+c = np.arange(-10,10,0.25)
+
+plt.scatter(c*vectX[0],c*vectX[1])
+
+
+plt.xlim(-1,2)
+plt.ylim(-3,6)
+plt.axhline(y=0, color='k')
+plt.axvline(x=0, color='k')
+plt.grid()
+plt.show()
+c = np.arange(-10,10,0.25)
+
+plt.scatter(c*vectX[0],c*vectX[1])
+
+
+plt.xlim(-6,3)
+plt.ylim(-12,5)
+plt.axhline(y=0, color='k')
+plt.axvline(x=0, color='k')
+plt.grid()
+plt.show()
